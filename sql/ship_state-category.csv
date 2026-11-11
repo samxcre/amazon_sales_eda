@@ -1,0 +1,16 @@
+SELECT 
+    ship_state,
+    COUNT(*) FILTER (WHERE category = 'Set') AS set_orders,
+    COUNT(*) FILTER (WHERE category = 'kurta') AS kurta_orders,
+    COUNT(*) FILTER (WHERE category = 'Western Dress') AS western_dress_orders,
+    COUNT(*) FILTER (WHERE category = 'Top') AS top_orders,
+    COUNT(*) FILTER (WHERE category = 'Ethnic Dress') AS ethnic_dress_orders,
+    COUNT(*) FILTER (WHERE category = 'Blouse') AS blouse_orders,
+    COUNT(*) FILTER (WHERE category = 'Bottom') AS bottom_orders,
+    COUNT(*) FILTER (WHERE category = 'Saree') AS saree_orders,
+    COUNT(*) FILTER (WHERE category = 'Dupatta') AS dupatta_orders,
+    COUNT(*) AS total_city_orders
+FROM amazon_sales
+WHERE status = 'Shipped'
+GROUP BY ship_state
+ORDER BY total_city_orders DESC;
