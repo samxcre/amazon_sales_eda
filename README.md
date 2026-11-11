@@ -1,5 +1,16 @@
 # Amazon India Apparel Sales Analysis
-
+amazon-sales-eda/
+├── README.md
+├── data/
+│   ├── raw/            # original dataset (if allowed to share)
+│   └── cleaned/        # cleanAMAZON-sales.csv
+├── notebooks/          # cleaning/exploration (Python or Excel notes)
+├── dashboard/
+│   ├── eda_Amazon_sales.pbix
+│   └── screenshots/    # PNGs of each dashboard page
+├── reports/            # optional PDF summary of insights
+├── .gitignore
+└── LICENSE             # optional (MIT is common)
 Exploratory data analysis of Amazon India apparel orders, with an interactive Power BI dashboard showing which products, sizes and locations drive sales.
 
 ## Business Question
@@ -16,8 +27,7 @@ Which product categories, sizes, states and cities generate the most orders and 
 - Power BI for the dashboard
 
 ## Dashboard
-![Dashboard overview](screenshots/dashboard-overview.png)
-![State-wise product demand](screenshots/state-wise-demand.png)
+![Dashboard overview](amazon-sales.png)
 
 The dashboard shows:
 - Category vs orders
@@ -38,8 +48,8 @@ The dashboard shows:
 - Increase stock of Set, Kurta and Western Dress, and stock the common sizes first. 
 
 ## Limitations
-- [e.g. The dataset covers only a limited time period.]
-- [e.g. Revenue is based on order values and does not account for returns/cancellations, if that applies.]
+- The dataset covers only a limited time period
+- Does not mention inventory level
 
 ## Files in This Repository
 - `notebooks/` : Python analysis
