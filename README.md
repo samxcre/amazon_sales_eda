@@ -1,16 +1,23 @@
 # Amazon India Apparel Sales Analysis
+
+## 📁 Project Structure
+
+```
 amazon-sales-eda/
 ├── README.md
 ├── data/
-│   ├── raw/            # original dataset (if allowed to share)
-│   └── cleaned/        # cleanAMAZON-sales.csv
-├── notebooks/          # cleaning/exploration (Python or Excel notes)
+│   ├── raw/ Amazon Sales Report.csv
+│   └── cleaned/
+│       └── cleanAMAZON-sales.csv
+├── notebooks/
+│   └── amazon_sales_eda.ipynb
 ├── dashboard/
-│   ├── eda_Amazon_sales.pbix
-│   └── screenshots/    # PNGs of each dashboard page
-├── reports/            # optional PDF summary of insights
-├── .gitignore
-└── LICENSE             # optional (MIT is common)
+│   ├── amazon_sales_dashboard.pbix
+│   └── screenshots/
+│       ├── amazon-sales.png
+├── requirements.txt
+└── .gitignore
+```
 Exploratory data analysis of Amazon India apparel orders, with an interactive Power BI dashboard showing which products, sizes and locations drive sales.
 
 ## Business Question
